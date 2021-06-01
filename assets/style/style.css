@@ -1,0 +1,18 @@
+.tbs{
+  text-shadow: 2px 2px #181414;
+}
+
+.tss{
+  text-shadow: 1px 1px #181414;
+}
+
+.hide {
+  display: none;
+  transition: .5s;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: rgb(235, 235, 235);
+  transition: .5s;
+}

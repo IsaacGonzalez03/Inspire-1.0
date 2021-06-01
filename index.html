@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Inspire</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-5 p-5">
+                    <div class="card bg-transparent text-light card-border-light">
+                        <div class="card-header">
+                            <h1 class="user-select-none tbs">Todo</h1>
+                        </div>
+                        <form onsubmit="app.todosController.addTodo()">
+                            <div class="input-group tss p-4 border-5">
+                                <input required id="description" name="description" type="text"
+                                    class="form-control bg-transparent" placeholder=". . ." aria-label="New Todo"
+                                    aria-describedby="button-addon2">
+                                <button class="btn btn-outline-light text-success" type="submit"
+                                    id="button-addon2"><b>+</b></button>
+                            </div>
+                        </form>
+                        <div class="card-body" id="todos"></div>
+                    </div>
+                </div>
+                <div class="col-6 p-5 tss">
+                    <div class="row">
+                        <div class="col text-light text-end" id="weather"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-light user-select-none text-end" id="clock"></h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="text-light user-select-none text-center" id="quote"></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app/main.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
