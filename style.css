@@ -1,18 +1,26 @@
 .tbs{
-  text-shadow: 2px 2px #181414;
+  text-shadow: 2px 2px #1814148c;
 }
 
 .tss{
-  text-shadow: 1px 1px #181414;
+  text-shadow: 1px 1px #18141494;
 }
 
 .hide {
-  display: none;
+  opacity: 0;
   transition: .5s;
 }
 
 .myDIV:hover + .hide {
-  display: block;
+  opacity: 1;
   color: rgb(235, 235, 235);
   transition: .5s;
+}
+
+input{
+  background: rgba(0, 0, 0, .35) !important
+}
+
+body{
+  background-size: cover;
 }

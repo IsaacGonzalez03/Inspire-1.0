@@ -38,7 +38,7 @@ export class TodosController {
       console.error(error)
     }
   }
-  async completeTodo() {
+  async completeTodo(id) {
     try {
       todosService.completeTodo(id)
     } catch (error) {
