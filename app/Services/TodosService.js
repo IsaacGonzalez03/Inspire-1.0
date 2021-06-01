@@ -15,8 +15,8 @@ class TodosService {
   async deleteTodo(id) {
     let todo = ProxyState.todos.find(t => t.id === id)
     console.log(todo)
-    let res = await sandboxApi.delete("/" + todo.id)
     // ProxyState.todos = ProxyState.todos.filter(t => t.id !== id)
+    let res = await sandboxApi.delete("/" + todo.id)
     this.getTodo()
     console.log(res)
   }
