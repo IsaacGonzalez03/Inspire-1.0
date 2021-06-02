@@ -9,11 +9,26 @@ function _drawTodos() {
   // console.log('draw todos')
 }
 
+function _todoCount() {
+  let todos = ProxyState.todos
+  let totalTodos = todos.length
+  let completed = 0
+  todos.forEach(t => {
+    if (t.completed == true) {
+      completed += 1
+    }
+  })
+  document.getElementById('todo-count').innerHTML = `Total Todo's: ${totalTodos} Completed: ${completed}`
+}
+
+
 export class TodosController {
   constructor() {
     ProxyState.on('todos', _drawTodos)
+    ProxyState.on('todos', _todoCount)
     // console.log('todos controller')
     this.getTodo()
+
   }
   async getTodo() {
     try {

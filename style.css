@@ -6,6 +6,10 @@
   text-shadow: 1px 1px #18141494;
 }
 
+.tls{
+  text-shadow: 1px 1px rgba(185, 185, 185, 0.616);
+}
+
 .hide {
   opacity: 0;
   transition: .5s;
@@ -23,4 +27,13 @@ input{
 
 body{
   background-size: cover;
+
+}
+
+main{
+  background-color: rgba(0, 0, 0, 0.644);
+}
+
+.glow:hover{
+  color: rgba(138, 14, 14, 0.781) !important ;
 }

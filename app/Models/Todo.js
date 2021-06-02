@@ -6,13 +6,15 @@ export class Todo {
   }
   get Template() {
     return /*html*/ `
-    <div class="justify-content-between">
+    <div>
       <div>
-        <input type="checkbox" onclick="app.todosController.completeTodo('${this.id}')"> ${this.description}
-        <!--add checked attribute based off this.completed -->
-        <button class="btn btn-danger btn-sm" onclick="app.todosController.deleteTodo('${this.id}')">Delete</button>
+        <input type="checkbox" onclick="app.todosController.completeTodo('${this.id}')" ${this.completed ? 'checked' : ''}> ${this.description}
+        <!--add checked attribute based off this.completed Ternary?-->
+        <h3 class="fas fa-bomb glow text-dark tls" onclick="app.todosController.deleteTodo('${this.id}')"></h3>
         </div>
     </div>
     `
   }
 }
+
+

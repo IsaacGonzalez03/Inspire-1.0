@@ -6,6 +6,7 @@ function _drawWeather() {
   document.getElementById('weather').innerHTML = weather.Template
 }
 
+
 export class WeathersController {
   constructor() {
     this.getWeather()
@@ -19,4 +20,5 @@ export class WeathersController {
       console.error(error)
     }
   }
+
 }

@@ -9,28 +9,31 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/main.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Inspire</title>
 </head>
 
 <body>
     <main>
         <div class="container-fluid">
-            <div class="row justify-content-end">
-                <div class="col-5 p-5">
-                    <div class="card bg-transparent text-light card-border-light">
-                        <div class="card-header">
-                            <h1 class="user-select-none tbs">Todo</h1>
+            <div class="row">
+                <div class="col-6 p-5">
+                    <div class="card bg-transparent text-light border border-light">
+                        <div class=>
+                            <h1 class="card-header user-select-none tbs">Todo</h1>
                         </div>
                         <form onsubmit="app.todosController.addTodo()">
                             <div class="input-group tss p-4 border-5">
                                 <input required id="description" name="description" type="text"
-                                    class="form-control bg-transparent" placeholder=". . ." aria-label="New Todo"
-                                    aria-describedby="button-addon2">
+                                    class="form-control bg-transparent text-light" placeholder=". . ."
+                                    aria-label="New Todo" aria-describedby="button-addon2">
                                 <button class="btn btn-outline-light text-success" type="submit"
                                     id="button-addon2"><b>+</b></button>
                             </div>
                         </form>
                         <div class="card-body" id="todos"></div>
+                        <div class="card-footer text-end" id="todo-count"></div>
                     </div>
                 </div>
                 <div class="col-6 p-5 tss">
@@ -43,8 +46,8 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <h4 class="text-light user-select-none text-center" id="quote"></h4>
+                        <div class="col p-4">
+                            <h4 class="text-light user-select-none text-end" id="quote"></h4>
                         </div>
                     </div>
                 </div>
